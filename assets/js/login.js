@@ -57,6 +57,7 @@ $(function() {
 
                 }
                 layer.msg('登录成功')
+                localStorage.setItem('token', res.token)
                 console.log(res.token);
                 //跳转到后台首页
                 location.href = '/index.html'
